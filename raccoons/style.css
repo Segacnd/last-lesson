@@ -1,0 +1,123 @@
+:root{
+    --hero-background-color: #e5e3e3af;
+    --card-body: #64b099; 
+    --card-inner-body: #83b4a9;
+    --white-text: #ffffff;
+    --grid-card-background:#a4a987;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back-to-previous-page-button {
+    width: 140px;
+    height: 40px;
+    background: var(--card-inner-body);
+    border: transparent;
+    border-radius: 0px 0px 14px 0px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    align-items: center;
+    background-color: var(--hero-background-color);
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.back-button {
+    display: inline;
+    align-self: flex-start; 
+}
+
+.cards-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    width: 18%;
+    height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: var(--card-body);
+    padding-inline: 1%;
+    padding-block: 1%;
+    color: var(--white-text);
+    font-family: 'Oswald', sans-serif;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 26px
+}
+
+.card p {
+    font-size: 18px
+}
+
+.card-inner-body {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: var(--card-inner-body);
+}
+
+.img-wrapper {
+    padding-block: 16px;
+}
+
+.img-wrapper img {
+    height: 100px;
+}
+
+.card-description {
+    padding-top: 16px;
+    border-top: 2px solid var(--card-body);
+}
+
+.interactive-section {
+    background-color: var(--card-inner-body);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.grid-card {
+    height: 300px;
+    font-size: 64px;
+    color: var(--white-text);
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid-card img {
+    height: 240px;
+}
+
+.yellow {
+    background-color: var(--grid-card-background);
+}
+
+.centerd-grid-card {
+    margin: 0 auto;
+}
+
