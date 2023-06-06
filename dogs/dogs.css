@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+img {
+  position: absolute;
+  width: 10%;
+}
+
+.firstDog {
+  top: 0;
+  right: 0;
+}
+
+.secondDog {
+  top: 0;
+  left: 0;
+}
+
+.thirdDog {
+  bottom: 0;
+  right: 0;
+}
+
+.fourthDog {
+  bottom: 0;
+  left: 0;
+}
+
+.fifthDog {
+  bottom: 0;
+}
+
+.sixthDog {
+  top: 0;
+}
+.seventhDog {
+  left: 0;
+}
+
+.eighthDog {
+  right: 0;
+}
+
+#changePositionButton {
+  z-index: 1;
+  padding: 4px 6px;
+  font-size: 44px;
+
+  cursor: pointer;
+
+  height: 40px;
+
+  border-radius: var(--radius-base);
+  border: transparent;
+  background-color: var(--clr-blue);
+
+  letter-spacing: 0.12px;
+}
+
+button:hover {
+  transition: color ease-in-out 0.5s;
+  color: var(--primary-50);
+}
+
+button:hover::after {
+  width: 100%;
+}
