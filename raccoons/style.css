@@ -3,6 +3,7 @@
     --card-body: #64b099; 
     --card-inner-body: #83b4a9;
     --white-text: #ffffff;
+    --grid-card-background:#a4a987;
 }
 
 * {
@@ -10,6 +11,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.back-to-previous-page-button {
+    width: 140px;
+    height: 40px;
+    background: var(--card-inner-body);
+    border: transparent;
+    border-radius: 0px 0px 14px 0px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+
 
 .hero {
     display: flex;
@@ -90,9 +103,21 @@
 
 .grid-card {
     height: 300px;
-    border: 1px solid black;
     font-size: 64px;
     color: var(--white-text);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 }
+
+.grid-card img {
+    height: 240px;
+}
+
+.yellow {
+    background-color: var(--grid-card-background);
+}
+
+.centerd-grid-card {
+    margin: 0 auto;
+}
+
